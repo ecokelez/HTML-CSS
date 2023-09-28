@@ -1,21 +1,30 @@
 .box1{
     background-color: red;
+    flex: 1 0 100px;
 }
 .box2{
     background-color: yellow;
+    flex: 1 1 100px;
 }
 .box3{
     background-color:aqua ;
+    flex: 3 1 100px;
 }
 .box4{
     background-color: rgb(62, 128, 0);
+    flex: 1 1 100px;
 }
 .container div{ /*class ismi container olan elemanin icindeli divler*/
-    width: 70px;
-    height: 70px;
+    
+    
 }
 .container{
     display:flex;
-    flex-direction:column-reverse;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    border: 1px solid red;
+    height: 50vh;
+    gap: 1rem;
 
 }
