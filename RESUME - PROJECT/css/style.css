@@ -1,0 +1,92 @@
+/* 5- body'e fontu yapistirma*/
+body{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2rem;  /* icteki elemanlar body'nin kenarlarindan uzaklasacak*/
+}
+
+/* 7- Header bolumu*/
+
+header{
+    display: flex; /*title ve nav bloklarini yan yana getirdik*/
+    flex-direction: row;
+    justify-content: space-between;  /*yatayda hizalama yaptık */
+    align-items: center;  /* dikeyde hizalama yaptik */
+    background-color: darkgoldenrod;
+    border-radius: 5rem;
+    padding: 1rem 2rem;
+
+}
+
+ /* 8- Isim ile title yan yana getir*/
+ header.title{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+ }
+
+ /* 9- h'nin otomatik marginini kaldiralim ki, bosluklari biz belirleyelim */
+ header h2{
+    margin: 0;
+ }
+
+ /* 10- yuvarlak uzerinde calisalim */
+ header .title span{
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    border-radius: 50%;  /* 50% kare bir kutuyu yuvarlak yapar */
+ }
+
+ /* 11- sag ustteki menu uzerinde calisma */
+ header nav a{
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+ }
+
+ /* 12- menudeki linklerin uzerine gelince */
+ header nav a:hover{
+    color: darkgoldenrod;
+ }
+
+ /* 13- body'i olusturmak icin html'e git*/
+ /* 16- Main Bolmumu CSS*/
+
+ main{
+    padding: 5rem 20%;
+ }
+
+ main .home{
+    display: flex;
+    align-items: center; /* resimle yazilari dikeyde hizaladik*/
+    gap: 2rem;          /* resimle yazilarin arasini actik*/
+
+ }
+
+ main .profile img{
+ width: 400px;
+ height: 400px;
+ border-radius: 50%;
+ border: 1rem solid darkgoldenrod;
+ }
+
+ /* */
+ main .button{
+    background-color: darkgoldenrod;
+    padding: 1rem 2rem; /* ust-alt, sag-sol */
+    display: inline-block; /*a tagi inline old icin dikeyde padding alirken sorun yasiyor,(yani a tagi olan buttonlar ust uste geliyor sayfayi kücüldügünde)*/
+    border-radius: 5rem;   /* ==>(bunu onlemek icin ) o sebeple melez yapildi */
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 3px 3px 5px black; /* 3px saga, 3px asagi, 5px bulaniklik*/
+    margin-right: 1rem;
+
+ }
+
+ main .buttona:hover{
+    background-color: aqua;
+ }
+
+/* 17- footer'i olusturmak icin HTML'e git */
+

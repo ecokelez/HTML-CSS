@@ -14,10 +14,7 @@
     background-color: rgb(62, 128, 0);
     flex: 1 1 100px;
 }
-.container div{ /*class ismi container olan elemanin icindeli divler*/
-    
-    
-}
+
 .container{
     display:flex;
     flex-direction:row;
